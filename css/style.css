@@ -1,10 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700);
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
 	font-size: 13px;
 	background: none repeat scroll 0% 0% #F3F3F3;
+	color: #7F8C8C;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -305,20 +306,257 @@ a:focus {
 	box-shadow: 0 2px 0 #E2534B;	
 }
 
-#reason {
+.reason {
 	background: url(../img/white-ruler.png) repeat-x scroll 0px 0px transparent;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	padding: 50px 0px 30px;
 	position: relative;
+	display: block;	
+	height: 525px;
 }
 
-/*.preview-title {
+.preview-title h3 {
 	color: #E2534B;
 	text-align: center;
 	text-transform: uppercase;
 	padding-bottom: 10px;
+	font-size: 40px;
+	font-weight: 600;
 }
 
-.preview-content p {
+.preview-title p {
 	text-align: center;
-}*/
+	font-size: 13px;
+	color: #777;
+	margin: 0px 0px 70px;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.coverscroll {
+	position: relative;
+}
+
+.coverscroll img#pr1 {
+	position: absolute;
+	height: 239px;
+	top: 70px;
+	z-index: 136;
+}
+
+.coverscroll img#pr2 {
+	position: absolute;
+	width: 560px;
+	height: 340px;
+	top: 0px;
+	left: 315px;
+	z-index: 145;
+	display: block;
+}
+
+.coverscroll img#pr3 {
+	position: absolute;
+	width: 360px;
+	height: 239px;
+	top: 70px;
+	left: 780px;
+	z-index: 135;
+	display: block;
+}
+
+.msgs {
+	padding-top: 105px;
+}
+
+.msgs h3 {
+	font-size: 16px;
+	margin: 0px 0px 30px;
+	color: #7F8C8C;
+	font-weight: 700;
+	text-align: left;
+}
+
+.red-arrow {
+	color: #E2534B;
+	font-size: 12px;
+}
+
+.red-link {
+	color: #E2534B;
+	line-height: 1.8;
+}
+
+.blue-link {
+	color: rgba(0, 0, 0, 0.5);
+	line-height: 1.8;
+}
+
+.msgs div ul, .skills ul {
+	padding: 0;
+	margin: 0;	
+}
+
+.msgs div ul li p {
+	display: inline-block;
+}
+
+.skills {
+	text-align: center;
+}
+
+.skills ul li {
+    padding: 50px 3px;
+    display: inline-block;
+}
+
+.skills ul li span.skill-70 {
+    background-position: 50% -127px;
+}
+
+.skills ul li span.skill-80 {
+    background-position: 50% -253px;
+}
+
+.skills ul li span.skill-100 {
+    background-position: 50% -378px;
+}
+
+.skills ul li span {
+    background-image: url(../img/skillsSprite.png);
+    display: inline-block;
+	font-size: 30px;
+	font-weight: 800;
+	margin: 0px 0px 15px;
+	min-width: 123px;
+	padding: 25px 0px 0px;
+}
+
+.skills ul li h4 {
+    font-size: 16px;
+    color: #7F8C8C;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.quote {
+	background: none repeat scroll 0% 0% #F8F8F8;
+	border-radius: 6px;
+	padding: 15px;
+	font-style: italic;
+	line-height: 1.4;
+	width: 100%;
+}
+
+.author {
+	background: url(../img/bubbleArrow.png) no-repeat scroll 20px 0px transparent;
+    padding: 8px 0px 8px 58px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.slider-border {
+	padding: 0px;
+	margin: -25px 0px 14px;
+	background: url(../img/sliderBorder.png) no-repeat scroll 100% 50% transparent;
+	text-align: right;
+	color: black;
+}
+
+.client h3 {
+	font-size: 16px;
+	margin: 0px 0px 30px;
+	color: #7F8C8C;
+	font-weight: 700;
+}
+
+.client-logo .col-md-1{
+	border-radius: 6px;
+	margin: 20px 60px;
+}
+
+.navigator {
+	background: none repeat scroll 0% 0% rgb(152, 163, 163);
+	box-shadow: 0 3px 0 rgb(127, 140, 140);
+	font-size: 26px;
+	display: block;
+	padding: 6px 14px 1px;
+	color: white;
+	margin-top: -34px;
+}
+
+.navigator:hover {
+	color: white;
+}
+
+#foot {
+	background: url(../img/white-ruler.png) repeat-x scroll 0px 0px rgba(98, 185, 176, 0.8);
+	color: #FFF;
+	padding: 40px 0px 20px;
+}
+
+#foot {
+	background-color: rgba(98, 185, 176, 0.8);
+}
+
+#foot h2, #foot p {
+	color: white;
+	padding: 10px;
+}
+
+.col-md-2 h3 {	
+	padding: 15px;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: 700;
+}
+
+.col-md-2 ul li {
+	line-height: 2.0;
+}
+
+.col-md-4 h3 {
+	font-size: 20px; 
+	padding: 15px;
+	color: white;
+	font-weight: 700;
+}
+
+.col-md-4 ul li p {
+	padding-left: 7%;
+	display: inline;
+}
+
+.col-md-4 ul li img {
+	padding-bottom: 13px
+}
+
+#copyright {
+	font-size: 11px;
+	line-height: 1.2;
+	margin: 0px 0px 5px;
+	color: white;
+	padding: 20px 0px;
+}
+
+.social-icon {
+	font-size: 25px;
+	font-weight: 600;
+	color:white;
+}
+
+.social-icon li {
+	padding: 20px;
+	text-align: right;
+}
+
+.social-icon li:hover {
+	color: #E2534B;
+}
+
+.contact {
+	background: none repeat scroll 0% 0% rgb(106, 179, 172);
+}
+
