@@ -1,2 +1,2 @@
-$("#main-menu li").click(
-});
+$('.carousel').carousel();
+

@@ -78,10 +78,35 @@
       </div>
     </header>
 
-    <div class="jumbotron text-center">
+    <div id="slide-show" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#slide-show" data-slide-to="0" class="active"></li>
+        <li class="" data-target="#slide-show" data-slide-to="1"></li>
+        <li class="" data-target="#slide-show" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/0.gif" alt="First slide">
+        </div>
+        <div class="item">
+          <img src="img/1.gif" alt="Second slide">
+        </div>
+        <div class="item">
+          <img src="img/2.gif" alt="Third slide">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#slide-show" data-slide="prev">
+        <span class="left-icon">
+          <i class="fa fa-angle-double-left"></i>
+        </span>
+      </a>
+      <a class="right carousel-control" href="#slide-show" data-slide="next">
+        <span class="right-icon">
+          <i class="fa fa-angle-double-right"></i>
+        </span>
+      </a>
+    </div>  
 
-    </div>
-  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
