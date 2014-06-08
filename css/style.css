@@ -5,8 +5,16 @@ body {
 	font-weight: 500;
 }
 
+a:focus {
+	outline: none;
+}
+
 .navbar { 
 	background: url(../img/ruler.png) repeat-x 0 100% rgba(98, 185, 176, 0.8);
+}
+
+.brand span img{
+	margin-bottom: 22px;
 }
 
 #main-menu li {
@@ -15,8 +23,12 @@ body {
 
 #main-menu li a {
 	color: white;
+	text-decoration: none;
 }
 
+#main-menu li a:link {
+	
+}
 
 #main-menu li a span {
     display: block;
@@ -25,14 +37,16 @@ body {
     border-radius: 6px;
 }
 
-#main-menu li.active a span {
+#main-menu .active a span {
 	background: none repeat scroll 0% 0% rgba(98, 162, 158, 0.8);
+	box-shadow: 0 2px 0 #528B86;
 }
 
 #main-menu li a:hover span {
 	background: none repeat scroll 0% 0% rgb(232, 100, 90);
+	box-shadow: 0 2px 0 #E2534B;
 }
 
-ul#main-menu{
+#main-menu{
 	padding-top: 15px;
 }
