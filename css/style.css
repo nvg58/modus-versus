@@ -3,7 +3,6 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
-	padding-top: 76px;
 	font-size: 13px;
 	background: none repeat scroll 0% 0% #F3F3F3;
 }
@@ -78,6 +77,10 @@ a:focus {
 	padding-bottom: 8px;
 }
 
+#slide-show {
+	margin-top: -20px;
+}
+
 .carousel-inner div img {
 	width: auto;
   	height: 500px;
@@ -88,8 +91,6 @@ a:focus {
   	background-size: 100%;
   	min-width: 100%; 
   	min-height: 100%; 
-  	width: auto; 
-  	height :auto;
 }
 
 .carousel-control {
