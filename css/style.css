@@ -73,6 +73,10 @@ a:focus {
 	margin-bottom: 20px;
 }
 
+#main-menu .fa-chevron-down {
+	font-size: 10px;
+}
+
 .navbar-brand {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -163,14 +167,14 @@ a:focus {
 	vertical-align: middle;
 	width: 60px;
 	height: 5px;
-	background: none repeat scroll 0% 0% #E2534B; 
+	background: none repeat scroll 0% 0% #E2534B;
 	cursor: pointer;
 	border-radius: 0px;
 	margin: 0px 3px;
 }
 
 .carousel-indicators {
-  bottom:-30px;
+  bottom: -30px;
 }
 
 .carousel-inner {
@@ -563,12 +567,19 @@ a:focus {
 }
 
 .col-md-4 ul li a {
-	padding-left: 7%;
-	display: inline;
+	padding-left: 2.5%;
+	float: right;
+	width: 75%;
 }
 
 .col-md-4 ul li img {
-	padding-bottom: 13px
+	/*padding-bottom: 13px;*/
+	width: 25%;
+	border-radius: 6px;
+}
+
+.col-md-4 ul li {
+	padding-bottom: 13px;
 }
 
 #copyright {
