@@ -83,6 +83,11 @@ a:focus {
 	left: 10px;
 }
 
+.dropdown:hover span{
+    background: none repeat scroll 0% 0% rgb(232, 100, 90);
+	box-shadow: 0 2px 0 #E2534B;
+}
+
 .dropdown-menu {
 	padding: 0px;
 }
@@ -168,7 +173,7 @@ ul.dropdown-menu li a:before {
 }
 
 .navbar-header {
-	padding-bottom: 8px;
+/* 	padding-bottom: 8px; */
 }
 
 #slide-show {
