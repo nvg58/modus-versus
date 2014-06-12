@@ -73,10 +73,8 @@ a:focus {
 	margin-bottom: 10px;
 }
 
-#main-menu .fa-chevron-right {
-	font-size: 10px;
-	color: white;
-	display: inline;
+#main-menu .fa-chevron-down {
+	font-size: 10px;	
 }
 
 .navbar-right .dropdown-menu {
@@ -91,13 +89,22 @@ a:focus {
 
 .dropdown-menu li {
 	border-radius: 3px;
-	padding: 5px 15px 5px 15px;	
+	padding: 5px 15px 5px 0px;	
 	margin: 5px;
 	background-color: rgba(229, 101, 93, 1);
 }
 
+.dropdown-menu > li > a {
+	padding: 5px 25px 5px 10px;
+}
+
 .pull-down {
 	padding-top: 12px;
+}
+
+ul.dropdown-menu li a:before {
+	content: '> ';
+	margin-right: 5px;
 }
 
 .arrow_box { 
