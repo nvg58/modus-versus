@@ -381,8 +381,8 @@ a:focus {
 	margin: 0px 0px 5px;	
 }
 
-.item-view:hover i {
-	/*color: rgb(232, 100, 90);    */
+.item-view:hover {
+	background-color: white;    
 }
 
 .item:hover i {
