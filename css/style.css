@@ -70,11 +70,67 @@ a:focus {
 
 #main-menu {
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
-#main-menu .fa-chevron-down {
+#main-menu .fa-chevron-right {
 	font-size: 10px;
+	color: white;
+	display: inline;
+}
+
+.navbar-right .dropdown-menu {
+	background-color: rgb(226, 83, 75);
+	right: auto;
+	left: 10px;
+}
+
+.dropdown-menu {
+	padding: 0px;
+}
+
+.dropdown-menu li {
+	border-radius: 3px;
+	padding: 5px 15px 5px 15px;	
+	margin: 5px;
+	background-color: rgba(229, 101, 93, 1);
+}
+
+.pull-down {
+	padding-top: 12px;
+}
+
+.arrow_box { 
+
+} 
+
+.arrow_box:after, .arrow_box:before { 
+	bottom: 100%; 
+	left: 10%; 
+	border: solid transparent; 
+	content: " "; 
+	height: 0; 
+	width: 0; 
+	position: absolute; 
+	pointer-events: none; 
+} 
+
+.arrow_box:after { 
+	
+} 
+
+.arrow_box:before { 
+	border-bottom-color: rgb(226, 83, 75); 
+	border-width: 8px; 
+	margin-left: -8px; 
+}
+
+.dropdown-menu li:hover {
+	background: none repeat scroll 0% 0% rgb(98, 185, 176);
+}
+
+.dropdown-menu li a:hover {
+	background: none repeat scroll 0% 0% transparent;
 }
 
 .dropdown-menu .sub-menu {
@@ -83,6 +139,7 @@ a:focus {
     top: 0;
     visibility: hidden;
     margin-top: -1px;
+    color: 1px solid rgb(232, 100, 90);
 }
 
 .dropdown-menu li:hover .sub-menu {
@@ -267,12 +324,12 @@ a:focus {
 	background: none repeat scroll 0% 0% rgb(232, 100, 90);
 	box-shadow: 0 2px 0 #E2534B;	
 	display: block;
-	padding: 15px 0px;	
+	padding: 14px 0px;	
     border-radius: 6px;
     border-color: none;
     color: #FFF;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 17px;
 	text-align: center;	
 }
 
