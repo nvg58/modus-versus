@@ -738,9 +738,9 @@ a:focus {
 }
 
 .foot {
-	background: url(../img/blue-ruler.jpg) repeat-x scroll 0px 0px rgba(98, 185, 176, 0.8);	
+	background: url(../img/blue-ruler.jpg) repeat-x scroll 0px 0px rgb(118, 199, 192);	
 	color: #FFF;
-	padding: 40px 0px 20px;	
+	padding: 40px 0px 50px;	
 }
 
 .foot h2, .foot p {
