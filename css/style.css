@@ -635,6 +635,9 @@ a:focus {
 	margin: 0px 0px 30px;
 	color: #7F8C8C;
 	font-weight: 700;
+	background: url('../img/sliderBorder.png') no-repeat scroll 100% 50% transparent;
+	width: 91%;
+	float: left;
 }
 
 .client-logo .col-md-1{
@@ -646,7 +649,8 @@ a:focus {
 .list_carousel {
     /*background-color: #ccc;*/
     margin-bottom: 25px;
-    height: 130px;
+    /*height: 130px;*/
+    margin-top: 12px;
 }
 
 .list_carousel > .caroufredsel_wrapper {
