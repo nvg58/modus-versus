@@ -5,7 +5,7 @@ body {
 	font-weight: 500;
 	font-size: 13px;
 	background: none repeat scroll 0% 0% #F3F3F3;
-	color: #7F8C8C;
+	color: #7F8C8C;	
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,6 +20,7 @@ p a {
 
 li a:hover {
 	text-decoration: underline;
+	color: #E2534B;
 }
 
 li {
@@ -32,6 +33,7 @@ a:focus {
 
 .navbar { 
 	background: url(../img/ruler.png) repeat-x 0 100% rgba(98, 185, 176, 0.8);
+	margin-bottom: 19px;
 }
 
 .brand span img{
@@ -83,7 +85,7 @@ a:focus {
 	left: 10px;
 }
 
-.dropdown:hover span{
+.dropdown:hover span {
     background: none repeat scroll 0% 0% rgb(232, 100, 90);
 	box-shadow: 0 2px 0 #E2534B;
 }
@@ -101,6 +103,10 @@ a:focus {
 
 .dropdown-menu > li > a {
 	padding: 5px 25px 5px 10px;
+}
+
+.dropdown-menu > li > a:focus {
+	background-color: transparent;
 }
 
 .pull-down {
@@ -236,7 +242,6 @@ ul.dropdown-menu li a:before {
 	margin: 0px 3px;
 }
 
-
 .carousel-indicators li.active {
 	display: inline-block;
 	vertical-align: middle;
@@ -287,6 +292,10 @@ ul.dropdown-menu li a:before {
 	margin: 0px auto 10px;
 	max-width: 66.6667%;
 	text-transform: uppercase;
+}
+
+.carousel-caption h3:hover {
+	text-decoration: underline;
 }
 
 .carousel-caption p {
@@ -346,8 +355,8 @@ a:focus {
 }
 
 .top-services .col-md-2 {
-	padding-left: -10px;
-	padding-right: 0px;
+/* 	padding-left: -10px; */
+/* 	padding-right: 0px; */
 }
 
 .btn-view-more:hover{
@@ -430,6 +439,7 @@ a:focus {
 	margin-top: -23px;
 	background: none repeat scroll 0% 0% #62B9B0;
 	box-shadow: 0 2px 0 #528B86;
+	margin-bottom: 20px;
 }
 
 .float:hover{
@@ -461,6 +471,25 @@ a:focus {
 	color: #777;
 	margin: 0px 0px 70px;
 }
+
+/*------ 3D RoundAbout*/ 
+#wrapper {
+    width: 1010px;
+    height: 360px;
+    margin: -100px 0 0 -500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*background-color: red;*/
+}
+
+#carousel img {
+    display: block;
+    float: left;
+    border: none;
+    position: relative;
+}
+/*------*/
 
 .container-full {
   margin: 0 auto;
@@ -500,7 +529,7 @@ a:focus {
 }
 
 .msgs {
-	padding-top: 105px;
+	padding-top: 50px;
 }
 
 .msgs h3 {
@@ -509,6 +538,10 @@ a:focus {
 	color: #7F8C8C;
 	font-weight: 700;
 	text-align: left;
+}
+
+.msgs div ul li p a:hover {
+	/*color: #E2534B;*/
 }
 
 .red-arrow {
@@ -609,14 +642,91 @@ a:focus {
 	margin: 20px 60px;
 }
 
+/*----list_carousel----*/
+.list_carousel {
+    /*background-color: #ccc;*/
+    margin-bottom: 25px;
+    height: 130px;
+}
+
+.list_carousel > .caroufredsel_wrapper {
+	padding-top: 10px;
+}
+.list_carousel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+.list_carousel li {
+    font-size: 40px;
+    color: #999;
+    text-align: center;
+    width: 234px;    
+    display: block;
+    float: left;    
+}
+
+.list_carousel img {
+	border-radius: 6px;
+}
+
+.list_carousel a:focus {
+	outline: none;
+	color: white;
+	text-decoration: none;
+}
+
+.list_carousel .caroufredsel_wrapper li a:hover {
+	opacity: 0.5;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.prev {
+    float: left;
+    margin-left: 10px;
+}
+
+.next {
+    float: right;
+    margin-right: 10px;
+}
+
+.pager {
+    float: left;
+    width: 300px;
+    text-align: center;
+}
+
+.pager a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.pager a.selected {
+    text-decoration: underline;
+}
+
+.timer {
+    background-color: #999;
+    height: 6px;
+    width: 0px;
+}
+/*-----end*/
+
 .navigator {
 	background: none repeat scroll 0% 0% rgb(152, 163, 163);
 	box-shadow: 0 3px 0 rgb(127, 140, 140);
 	font-size: 26px;
 	display: block;
-	padding: 6px 14px 1px;
+	padding: 4px 14px;
 	color: white;
-	margin-top: -34px;
+	/*margin-top: -34px;*/
 }
 
 .navigator:hover {
@@ -656,12 +766,13 @@ a:focus {
 	padding-left: 2.5%;
 	float: right;
 	width: 75%;
+	cursor: pointer;
 }
 
 .col-md-4 ul li img {
-	/*padding-bottom: 13px;*/
 	width: 25%;
 	border-radius: 6px;
+	cursor: pointer;
 }
 
 .col-md-4 ul li {
