@@ -87,3 +87,16 @@ $(function() {
 		}
 	});
 });
+
+$(document).ready(function ()
+{
+    var terms = ["client-1", "client-2", "client-3", "client-4", "client-5", "client-6"]; //array of terms to rotate
+    function rotateTerm() {
+        var ct = $("#text-content").data("term") || 0;
+        $("#text-content").data("term", ct == terms.length - 1 ? 0 : ct + 1).text($('#text-slider .' + terms[ct]).html())
+                .fadeIn().delay(2000).fadeOut(200);
+        $("#title-content").text($('#title-slider .' +terms[ct]).html() )
+                .fadeIn().delay(2000).fadeOut(200, rotateTerm);
+    }
+    $(rotateTerm); //start it on document.ready
+});
