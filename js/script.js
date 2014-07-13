@@ -1,9 +1,3 @@
-// $("#main-menu > li").on('click', function(event) {
-// 	event.preventDefault();
-// 	$("#main-menu > li").removeClass('active');	
-// 	$(this).addClass('active');	
-// });
-
 $(function() {
 	var _center = {
 		width: 570,
